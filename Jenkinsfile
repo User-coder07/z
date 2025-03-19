@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage('cloning'){
             steps{
-                git url: 'https://github.com/User-coder07/z.git',branch: 'main',credentialsId='pr'
+                git branch: 'main' , url: 'https://github.com/User-coder07/z.git' ,credentialsId='pr'
             }
         }
         stage("compile"){
