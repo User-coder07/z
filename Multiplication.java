@@ -1,4 +1,3 @@
-package z;
 
 public class Multiplication {
     public static void main(String[] args) {
