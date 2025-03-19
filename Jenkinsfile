@@ -5,9 +5,9 @@ pipeline{
         PATH ="${JAVA_HOME}\\bin;${env.PATH}"
     }
     stages{
-        stage('checkout the code'){
+        stage('cloning'){
             steps{
-                git 'https://github.com/User-coder07/z.git'
+                git url: 'https://github.com/User-coder07/z.git',branch: 'main'
             }
         }
         stage("compile"){
